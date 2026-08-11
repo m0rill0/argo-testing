@@ -11,7 +11,7 @@ services:
     build: .
     entrypoint: /code/entrypoint.sh
     env_file:
-      - ../stack.env
+      - .env
     environment:
       - APPLICATION_PORT=${APPLICATION_PORT:-8014}
     volumes:
